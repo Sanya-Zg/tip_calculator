@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles.css">
   <title>Tip calculator app</title>
-
+  <script src="/code.js" defer></script>
 </head>
 <body>
+  <header>
+    <div class="logo"><a href="#"><img src="./images/logo.svg" alt=""></a></div>
+  </header>
   <main>
-    <h1>SPLITER</h1>
-    <container>
+    <div class="container">
       <div class="func_block">
         <div class="bill_cont">
-          <span>Bill</span>
-          <input type="number" id="bill" class="data_input">
+          <label for="bill">Bill</label>
+          <div class="input_cont">
+            <input type="number" id="bill" class="data_input">
+          </div>
         </div>
 
         <div class="tip_cont">
@@ -32,27 +35,29 @@
         </div>
 
         <div class="people_number">
-          <span>Number of People</span>
-          <input type="number" class="data_input" id="people_num">
+          <label for="people_num">Number of People</label>
+          <span class="error_zero" id="error"></span>
+          <div class="input_cont_pers">
+            <input type="number" class="data_input" id="people_num">
+          </div>
         </div>
       </div>
       <div class="res_block">
         <div class="amount">
           <div class="tip_person">
-            <span class="title_span_amount">Tip Amount</span>
-            <span class="sub_span">/ person</span>
+            <span class="title_span_amount">Tip Amount <span class="sub_span">/ person</span></span>
+            <span id="tip_pers" class="price_p">0.00</span>
           </div>
-          <span id="tip_pers" class="price_p"></span>
+          
           <div class="tip_person">
-            <span class="title_span_amount">Total</span>
-            <span class="sub_span">/ person</span>
+            <span class="title_span_amount">Total <span class="sub_span">/ person</span></span>
+            <span id="tip_pers" class="price_p">0.00</span>
           </div>
-          <span id="tip_pers" class="price_p"></span>
         </div>
 
         <button class="reset" id="reset">Reset</button>
       </div>
-    </container>
+    </div>
   </main>
 </body>
 </html>
