@@ -82,6 +82,9 @@ input {
     font-size: 24px;
     color: var(--very-dark-cyan);
   }
+  input[type="number"]{
+    caret-color: #9FE8DF;
+  }
 input:focus{
     border: 2px solid var(--strong-cyan);
   }
@@ -108,23 +111,21 @@ button{
     background-color: var(--very-dark-cyan);
     color: #fff;
     font-size: 24px;
-    
     transition: all 0.2s linear;
 }
 button:hover{
     background-color: #9FE8DF;
     color: var(--very-dark-cyan);
 }
-button:active{
+.active_button{
     background-color: var(--strong-cyan);
-}
-.tip_button {
-
+    color: var(--very-dark-cyan);
 }
 .tip_input {
     width: 118px;
     height: 48px;
     padding-right: 13px;
+    text-indent: 10px;
 }
 .tip_input::placeholder{
     padding-right: 2px;
@@ -165,13 +166,12 @@ button:active{
     flex-direction: column;
     justify-content: space-between;
 }
-.amount {
-
-}
 .tip_person {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 25px;
 }
 .title_span_amount {
     color:#fff;
@@ -184,6 +184,8 @@ button:active{
     font-size: 48px;
     color: var(--strong-cyan);
     letter-spacing: -1px;
+    max-width: 333px;
+    overflow: hidden;
 }
 .reset {
     background-color: var(--strong-cyan);
