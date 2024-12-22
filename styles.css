@@ -39,11 +39,9 @@ body{
 }
 .container{
     max-width: 920px;
-    /* height: 481px; */
     background-color: #fff;
     border-radius: 25px;
     display: flex;
-    /* flex-wrap: wrap; */
     padding: 32px;
 }
 .func_block {
@@ -229,9 +227,7 @@ button:hover{
     .price_p{
     font-size: 32px;
    }
-   .error_zero{
-    /* margin: 0; */
-   }
+   
    .res_block{
     padding: 22px;
    }

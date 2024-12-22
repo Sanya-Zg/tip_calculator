@@ -20,6 +20,7 @@ const buttonArray = [
 ]
 let activeButton = null;
 
+
 buttonArray.forEach(button => {
 
     custom.addEventListener('input', () => {
