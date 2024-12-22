@@ -17,7 +17,6 @@ const buttonArray = [
     tip_15,
     tip_25,
     tip_50,
-    
 ]
 let activeButton = null;
 
@@ -103,7 +102,7 @@ reset_button.addEventListener('click', () => {
     custom.value = '';
     tip_pers.textContent = "$" + zeroNum.toFixed(2);
     total_pers.textContent = "$" + zeroNum.toFixed(2);
-
+    error_span.textContent = '';
     buttonArray.forEach(button => button.classList.remove('active_button'));
   activeButton = null; 
 })
