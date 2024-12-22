@@ -223,6 +223,8 @@ button:hover{
 @media (max-width: 375px){
     .container{
     padding: 24px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
    }
     .price_p{
     font-size: 32px;
