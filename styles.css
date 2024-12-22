@@ -203,6 +203,9 @@ button:hover{
     }
 }
 @media (max-width: 470px){
+    .logo{
+        margin: 50px auto 41px;
+       }
     .buttons_cont{
         grid-template-columns: 1fr 1fr;
     }
@@ -220,7 +223,7 @@ button:hover{
     }
 }
 @media (max-width: 375px){
-   .container{
+    .container{
     padding: 24px;
    }
     .price_p{
